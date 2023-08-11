@@ -1,0 +1,19 @@
+# set target
+include("${CMAKE_CURRENT_LIST_DIR}/dverkTargets.cmake")
+
+# Set DVERK version
+set(DVERK_VERSION @DVERK_VERSION@)
+
+# Set DVERK include dir
+set(DVERK_INCLUDE_DIR "${CMAKE_INSTALL_PREFIX}/include")
+set(DVERK_INCLUDE_DIRS "${DVERK_INCLUDE_DIR}")
+
+# Set DVERK FOUND
+set(DVERK_FOUND TRUE)
+
+# Add DVERK version
+if(NOT DEFINED DVERK_VERSION)
+    set(DVERK_VERSION "Unknown")
+endif()
+
+message(STATUS "Found DVERK version: ${DVERK_VERSION}")

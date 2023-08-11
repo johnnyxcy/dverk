@@ -1,0 +1,11 @@
+[
+  {
+    "name": "GCC",
+    "compilers": {
+      "C": "gcc",
+      "CXX": "g++",
+      "Fortran": "gfortran"
+    },
+    "isTrusted": true
+  }
+]
